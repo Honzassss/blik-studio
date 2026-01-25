@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import ThemeToggle from './ThemeToggle'
@@ -11,6 +11,7 @@ export default function Navbar() {
   const { t } = useI18n()
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const navLinks = [
     { href: '/#home', label: t.nav.home },
@@ -19,11 +20,20 @@ export default function Navbar() {
   ]
 
   useEffect(() => {
+    let ticking = false
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
+      if (!ticking) {
+        ticking = true
+        requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 20)
+          ticking = false
+        })
+      }
     }
 
-    window.addEventListener('scroll', handleScroll)
+    // Use passive listener for better scroll performance
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 

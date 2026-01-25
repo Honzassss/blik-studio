@@ -1,22 +1,61 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { processSteps } from '@/lib/constants'
 import RevealText from './RevealText'
 import { useI18n } from '@/lib/i18n'
 
-gsap.registerPlugin(ScrollTrigger)
+// Lazy-load GSAP to avoid blocking initial render
+let gsap: typeof import('gsap').default | null = null
+let ScrollTrigger: typeof import('gsap/ScrollTrigger').default | null = null
 
 export default function Process() {
   const { t } = useI18n()
   const sectionRef = useRef<HTMLDivElement | null>(null)
   const trackRef = useRef<HTMLDivElement | null>(null)
+  const [gsapReady, setGsapReady] = useState(false)
   const itemKeys = ['discovery', 'design', 'development', 'launch'] as const
 
   useEffect(() => {
+    // Load GSAP dynamically after component mounts
+    if (gsapReady) return
+
+    const loadGSAP = async () => {
+      try {
+        const gsapModule = await import('gsap')
+        const ScrollTriggerModule = await import('gsap/ScrollTrigger')
+        gsap = gsapModule.default
+        ScrollTrigger = ScrollTriggerModule.default
+        gsap?.registerPlugin(ScrollTrigger)
+        setGsapReady(true)
+      } catch (err) {
+        console.error('Failed to load GSAP:', err)
+      }
+    }
+
+    // Defer loading until after first paint
+    let timerId: NodeJS.Timeout | number
+    const hasRequestIdleCallback = typeof requestIdleCallback !== 'undefined'
+    
+    if (hasRequestIdleCallback) {
+      timerId = requestIdleCallback(loadGSAP)
+    } else {
+      timerId = setTimeout(loadGSAP, 100)
+    }
+
+    return () => {
+      if (hasRequestIdleCallback && typeof timerId !== 'object') {
+        cancelIdleCallback(timerId as number)
+      } else if (!hasRequestIdleCallback) {
+        clearTimeout(timerId as NodeJS.Timeout)
+      }
+    }
+  }, [gsapReady])
+
+  useEffect(() => {
+    if (!gsapReady || !gsap || !ScrollTrigger) return
+
     const section = sectionRef.current
     const track = trackRef.current
     if (!section || !track) return
@@ -30,14 +69,14 @@ export default function Process() {
 
     if (reduceMotion) return
 
-    const ctx = gsap.context(() => {
+    const ctx = gsap!.context(() => {
       const getDistance = () => {
         const endBuffer = Math.max(window.innerWidth * 0.3, 240)
         return track.scrollWidth - window.innerWidth + endBuffer
       }
       const snapPoints = cardCount > 1 ? 1 / (cardCount - 1) : 1
 
-      gsap.to(track, {
+      gsap!.to(track, {
         x: () => -getDistance(),
         ease: 'none',
         scrollTrigger: {
@@ -54,7 +93,7 @@ export default function Process() {
     }, section)
 
     return () => ctx.revert()
-  }, [])
+  }, [gsapReady])
 
   return (
     <section className="relative py-24 md:py-40 bg-gradient-to-b from-white to-primary-50 dark:from-[#1d1a17] dark:to-[#221e1a] overflow-hidden">

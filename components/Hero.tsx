@@ -1,6 +1,7 @@
 'use client'
 
 import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import KineticHeadline from './KineticHeadline'
@@ -24,6 +25,7 @@ const featuredHighlights = [
 
 export default function Hero() {
   const { t } = useI18n()
+  const [isClient, setIsClient] = useState(false)
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
   const smoothX = useSpring(mouseX, { stiffness: 120, damping: 20, mass: 0.3 })
@@ -32,6 +34,10 @@ export default function Hero() {
   const spotlightGlow = useMotionTemplate`radial-gradient(1400px circle at ${smoothX}px ${smoothY}px, rgba(176,166,149,0.25), transparent 65%)`
   const rotateX = useTransform(smoothY, [0, 1200], [8, -8])
   const rotateY = useTransform(smoothX, [0, 1200], [-10, 10])
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault()
@@ -42,6 +48,7 @@ export default function Hero() {
   }
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isClient) return
     const { left, top } = e.currentTarget.getBoundingClientRect()
     mouseX.set(e.clientX - left)
     mouseY.set(e.clientY - top)

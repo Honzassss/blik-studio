@@ -12,6 +12,8 @@ const domine = Domine({
   subsets: ['latin'],
   variable: '--font-domine',
   display: 'swap',
+  weight: ['400', '700'],
+  preload: true,
 })
 
 export const metadata: Metadata = {
