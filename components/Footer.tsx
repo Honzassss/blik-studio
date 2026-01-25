@@ -5,10 +5,10 @@ import { Github, Linkedin, Twitter, Mail } from 'lucide-react'
 import { useI18n } from '@/lib/i18n'
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
-  { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' },
+  { icon: Github, href: 'https://github.com/blikstudio', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://linkedin.com/company/blik-studio', label: 'LinkedIn' },
+  { icon: Twitter, href: 'https://twitter.com/blikstudio', label: 'Twitter' },
+  { icon: Mail, href: 'mailto:stok@blik-studio.cz', label: 'Email' },
 ]
 
 const footerLinks = [
@@ -24,7 +24,6 @@ export default function Footer() {
   const footerLinks = [
     { href: '/', label: t.nav.home },
     { href: '/projects', label: t.nav.projects },
-    { href: '/about', label: t.nav.about },
     { href: '/#contact', label: t.nav.contact },
   ]
   
@@ -35,7 +34,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold mb-3">
-              Your<span className="text-primary-600">Name</span>
+              <span className="text-primary-600">Blik</span>.
             </h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               {t.footer.tagline}

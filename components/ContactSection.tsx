@@ -157,11 +157,11 @@ export default function ContactSection() {
               Or email directly
             </p>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:stok@blik-studio.cz"
               className="inline-flex items-center gap-2 text-lg font-semibold text-primary-700 hover:text-primary-800 dark:text-primary-400 dark:hover:text-primary-300 transition"
             >
               <Mail className="w-5 h-5" />
-              your.email@example.com
+              stok@blik-studio.cz
             </a>
           </div>
         </div>

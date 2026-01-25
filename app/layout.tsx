@@ -15,7 +15,7 @@ const domine = Domine({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://blik-studio.cz'),
   title: {
       default: 'blik-studio — Digital Experiences',
       template: '%s | blik-studio',

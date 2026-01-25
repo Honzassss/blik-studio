@@ -15,7 +15,6 @@ export default function Navbar() {
   const navLinks = [
     { href: '/#home', label: t.nav.home },
     { href: '/#projects', label: t.nav.projects },
-    { href: '/about', label: t.nav.about },
     { href: '/#contact', label: t.nav.contact },
   ]
 
@@ -56,7 +55,7 @@ export default function Navbar() {
         }`}>
           {/* Logo */}
           <Link href="/" className="text-xl md:text-2xl font-bold hover:scale-105 transition-transform">
-            Your<span className="text-primary-600">Name</span>
+            <span className="text-primary-600">Blik</span>.
           </Link>
 
           {/* Desktop Navigation */}

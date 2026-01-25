@@ -55,7 +55,7 @@ export default function Hero() {
     >
       {/* Background gradient + animated layers */}
       <div className="absolute inset-0 -z-20 bg-gradient-to-br from-primary-50 via-[#f3eeea] to-[#ebe3d5] dark:from-[#1d1a17] dark:via-[#221e1a] dark:to-[#2a2520]" />
-      <div className="pointer-events-none absolute inset-0 -z-10 mix-blend-screen">
+      <div className="pointer-events-none absolute inset-0 -z-10 mix-blend-screen hidden md:block">
         <div className="hero-grid" />
         <div className="hero-noise" />
         <div className="hero-aurora" />
@@ -162,7 +162,7 @@ export default function Hero() {
           {/* Right column interactive card */}
           <motion.div
             style={{ rotateX, rotateY }}
-            className="relative w-full"
+            className="relative w-full hidden lg:block"
           >
             <motion.div
               className="relative rounded-[28px] bg-white/85 dark:bg-[#1f1b18]/85 border border-primary-100 dark:border-[#2a2520] shadow-2xl backdrop-blur-xl overflow-hidden"
