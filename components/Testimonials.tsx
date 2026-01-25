@@ -7,7 +7,7 @@ import { useI18n } from '@/lib/i18n'
 
 export default function Testimonials() {
   const { t } = useI18n()
-  const testimonialKeys = ['herget', 'stok', 'matoulek', 'david'] as const
+  const testimonialKeys = ['herget', 'stok', 'matoulek', 'anonym'] as const
   return (
     <section className="relative py-24 md:py-40 bg-gradient-to-b from-primary-50 to-white dark:from-[#221e1a] dark:to-[#1d1a17] overflow-hidden">
       {/* Section separator */}
