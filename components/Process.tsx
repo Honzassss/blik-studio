@@ -14,6 +14,7 @@ export default function Process() {
   const { t } = useI18n()
   const sectionRef = useRef<HTMLDivElement | null>(null)
   const trackRef = useRef<HTMLDivElement | null>(null)
+  const itemKeys = ['discovery', 'design', 'development', 'launch'] as const
 
   useEffect(() => {
     const section = sectionRef.current
@@ -80,8 +81,8 @@ export default function Process() {
         <div ref={trackRef} className="hscroll__track">
           <div className="hscroll__spacer-start" aria-hidden />
           {processSteps.map((step, index) => {
-            const itemKey = ['discovery', 'design', 'development', 'launch'][index]
-            const translatedStep = t.process.items[itemKey]
+            const itemKey = itemKeys[index]
+            const translatedStep = t.process.items?.[itemKey]
             return (
             <article
               key={step.number}

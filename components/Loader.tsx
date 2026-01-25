@@ -21,7 +21,7 @@ export default function Loader({ onComplete }: LoaderProps) {
           transition={{ duration: duration, ease: 'easeOut' }}
           className="text-3xl md:text-4xl font-bold tracking-tight"
         >
-          Your Name
+          blik.
         </motion.h1>
         {/* Progress line */}
         <motion.div

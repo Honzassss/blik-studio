@@ -8,7 +8,8 @@ import { useI18n } from '@/lib/i18n'
 
 export default function TechStack() {
   const { t } = useI18n()
-  const [selectedId, setSelectedId] = useState(techStack[0]?.id)
+  type TechKey = (typeof techStack)[number]['id']
+  const [selectedId, setSelectedId] = useState<TechKey>(techStack[0]?.id as TechKey)
 
   const selectedTool = useMemo(
     () => techStack.find(t => t.id === selectedId) ?? techStack[0],
@@ -114,12 +115,19 @@ export default function TechStack() {
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                  {t.techStack.items[selectedId]?.name || selectedTool?.name}
-                </h3>
-                <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {t.techStack.items[selectedId]?.description || selectedTool?.description}
-                </p>
+                {(() => {
+                  const translatedTool = t.techStack.items?.[selectedId as keyof typeof t.techStack.items]
+                  return (
+                    <>
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                        {translatedTool?.name || selectedTool?.name}
+                      </h3>
+                      <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                        {translatedTool?.description || selectedTool?.description}
+                      </p>
+                    </>
+                  )
+                })()}
               </motion.div>
             </AnimatePresence>
           </motion.div>

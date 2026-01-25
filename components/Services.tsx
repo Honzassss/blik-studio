@@ -7,6 +7,7 @@ import { useI18n } from '@/lib/i18n'
 
 export default function Services() {
   const { t } = useI18n()
+  const serviceKeys = ['webDev', 'uxDesign', 'mobile', 'perf', 'seo', 'support'] as const
   return (
     <section id="services" className="relative py-24 md:py-40 bg-white dark:bg-[#1d1a17] overflow-hidden">
       {/* Section separator */}
@@ -44,12 +45,12 @@ export default function Services() {
               </div>
 
               {(() => {
-                const itemKey = ['webDev', 'uxDesign', 'mobile', 'perf', 'seo', 'support'][index]
+                const itemKey = serviceKeys[index]
                 return (
                   <>
-                    <h3 className="text-2xl font-bold mb-3">{t.services.items[itemKey]?.title || service.title}</h3>
+                    <h3 className="text-2xl font-bold mb-3">{t.services.items?.[itemKey]?.title || service.title}</h3>
                     <p className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
-                      {t.services.items[itemKey]?.description || service.description}
+                      {t.services.items?.[itemKey]?.description || service.description}
                     </p>
                   </>
                 )

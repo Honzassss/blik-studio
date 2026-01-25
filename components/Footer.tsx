@@ -83,7 +83,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-primary-100 dark:border-[#2a2520]">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              © {new Date().getFullYear()} Your Name. {t.footer.rights}
+              © {new Date().getFullYear()} blik-studio. {t.footer.rights}
             </p>
             <div className="flex gap-6">
               <Link
