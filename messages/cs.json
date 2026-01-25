@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "home": "Domů",
+    "about": "O mně",
+    "projects": "Projekty",
+    "contact": "Kontakt",
+    "bookCall": "Domluvit hovor"
+  },
+  "hero": {
+    "available": "Dostupný pro nové projekty",
+    "title": "Vytvářím digitální zážitky, které konvertují",
+    "subtitle": "Full-Stack vývojář & Designer",
+    "description": "Vytvářím moderní webové aplikace a digitální produkty, které kombinují nádherný design s výkonnou funkčností. Od návrhu až po spuštění pomáhám firmám růst prostřednictvím strategického vývoje.",
+    "viewWork": "Zobrazit práce",
+    "getInTouch": "Napište mi"
+  },
+  "services": {
+    "label": "Co nabízím",
+    "title": "Služby, které mohou škálovat váš byznys",
+    "description": "Full-stack expertise v designu, vývoji a strategii. Spolupracuji s značkami na vytváření digitálních produktů, které jsou krásné, rychlé a vytvořené pro konverzi.",
+    "items": {
+      "webDev": {
+        "title": "Vývoj webu",
+        "description": "Vlastní weby a webové aplikace vytvořené moderními frameworky jako Next.js, React a TypeScript."
+      },
+      "uxDesign": {
+        "title": "UI/UX Design",
+        "description": "Nádherná a intuitivní rozhraní, která se uživatelům líbí a zvyšují konverze."
+      },
+      "mobile": {
+        "title": "Vývoj mobilních aplikací",
+        "description": "Multiplatformní mobilní aplikace s React Native, které fungují bezproblémově na iOS a Androidu."
+      },
+      "perf": {
+        "title": "Optimalizace výkonu",
+        "description": "Zrychlení vašeho stávajícího webu pomocí pokročilých optimalizačních technik."
+      },
+      "seo": {
+        "title": "SEO & Marketing",
+        "description": "Technické SEO, strategie obsahu a analytika pro zvýšení organického provozu."
+      },
+      "support": {
+        "title": "Údržba a podpora",
+        "description": "Průběžná údržba, aktualizace a technická podpora pro váš klid."
+      }
+    }
+  },
+  "process": {
+    "label": "Jak pracujeme",
+    "title": "Proces vytvořený pro výsledky",
+    "description": "Od objevování po dodání. Kolaborativní přístup, který vás udržuje informované v každé fázi a zajišťuje, že váš projekt bude dodán včas, v rámci rozpočtu a s překonáním očekávání.",
+    "items": {
+      "discovery": {
+        "title": "Objev",
+        "description": "Začínáme hlubokou analýzou vašich obchodních cílů, cílové skupiny a technických požadavků."
+      },
+      "design": {
+        "title": "Design a plánování",
+        "description": "Vytvářím drátěné modely a mockupy, poté plánuji technickou architekturu ke schválení."
+      },
+      "development": {
+        "title": "Vývoj",
+        "description": "Stavím váš projekt s čistým kódem, pravidelnými aktualizacemi a průběžným testováním."
+      },
+      "launch": {
+        "title": "Spuštění a podpora",
+        "description": "Nasazení do produkce, monitorování výkonu a poskytování průběžné podpory dle potřeby."
+      }
+    }
+  },
+  "techStack": {
+    "label": "Tech Stack",
+    "title": "Technologie, se kterými pracuji",
+    "description": "Moderní nástroje a frameworky pro budování škálovatelných a výkonných aplikací.",
+    "items": {
+      "nextjs": { "name": "Next.js", "description": "React framework pro aplikace připravené na produkci. Next.js vám poskytuje nejlepší vývojářský zážitek s vestavěným serverovým vykreslováním, statickou generací a TypeScript podporou." },
+      "react": { "name": "React", "description": "Knihovna JavaScriptu pro vytváření uživatelských rozhraní s architekturou založenou na komponentách. React usnadňuje vytváření interaktivních uživatelských rozhraní s efektivními aktualizacemi." },
+      "typescript": { "name": "TypeScript", "description": "TypeScript je JavaScript se syntaxí pro typy. Je to silně typovaný programovací jazyk, který staví na JavaScriptu a poskytuje lepší nástroje v jakémkoli měřítku." },
+      "tailwind": { "name": "Tailwind CSS", "description": "Framework CSS zaměřený na utility pro rychlé vytváření vlastních uživatelských rozhraní. Tailwind poskytuje nízkoúrovňové třídy utility pro zcela vlastní návrhy." },
+      "nodejs": { "name": "Node.js", "description": "Open-source runtime prostředí JavaScriptu navrženého pro vytváření škálovatelných síťových aplikací s vysokým výkonem." },
+      "postgresql": { "name": "PostgreSQL", "description": "Nejpokročilejší open source relační databáze s ověřenou architekturou, spolehlivostí a robustní sadou funkcí." },
+      "mongodb": { "name": "MongoDB", "description": "Dokumentově orientovaná NoSQL databáze pro ukládání velkého objemu dat s vysokým výkonem a automatickým škálováním." },
+      "redis": { "name": "Redis", "description": "Open source úložiště datových struktur v paměti používané jako databáze, cache a message broker s latencí pod milisekundu." },
+      "laravel": { "name": "Laravel", "description": "Webový framework s expresivní a elegantnější syntaxí pro rychlý vývoj s výkonnými funkcemi pro směrování a autentizaci." },
+      "reactNative": { "name": "React Native", "description": "Vytvářejte nativní aplikace pro Android a iOS pomocí React se skutečně nativními komponentami uživatelského rozhraní." },
+      "framerMotion": { "name": "Framer Motion", "description": "Knihovna animací připravená pro produkci v React, která usnadňuje vytváření komplexních animací s deklarativním API." },
+      "aws": { "name": "AWS", "description": "Amazon Web Services nabízí spolehlivé, škálovatelné a levné cloudové výpočetní služby pro jakoukoli velikost podniku." },
+      "docker": { "name": "Docker", "description": "Open-source platforma pro vývoj, dodávku a spouštění aplikací s kontejnerizací pro konzistentní prostředí." },
+      "git": { "name": "Git", "description": "Bezplatný a open-source distribuovaný systém správy verzí navrženého pro rychlost a efektivitu." },
+      "figma": { "name": "Figma", "description": "Kolaborativní nástroj pro návrh rozhraní v reálném čase s prototypováním a možnostmi předání pro vývojáře." }
+    }
+  },
+  "testimonials": {
+    "label": "Důvěřují nám vedoucí",
+    "title": "Co říkají značky o naší práci",
+    "description": "Skutečná zpětná vazba od značek, se kterými jsme spolupracovali. Od prvního dne až do dokončení projektu nás řídí spolupráce.",
+    "items": {
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "CEO, Fashion Brand Co.",
+        "content": "Spolupráce s nimi byla přelomová pro náš byznys. Naše nová platforma elektronického obchodu zvýšila tržby o 156% za pouhé tři měsíce."
+      },
+      "michael": {
+        "name": "Michael Chen",
+        "role": "CTO, DataMetrics Inc.",
+        "content": "Výjimečné technické dovednosti a skvělá komunikace. Dashboard, který vytvořili, se stal klíčovou funkcí našeho produktu."
+      },
+      "emma": {
+        "name": "Emma Rodriguez",
+        "role": "Founder, FitLife",
+        "content": "Nejen že dodali krásnou aplikaci, ale také poskytli cenné poznatky o UX, které zvýšily naši retenci o 40%."
+      },
+      "david": {
+        "name": "David Park",
+        "role": "Marketing Director, Creative Co.",
+        "content": "Naše nová portfolio stránka vítězila v soutěžích a ztrojnásobila počet příchozích potenciálních klientů. Péče o detaily a výkon je výjimečná."
+      }
+    }
+  },
+  "cta": {
+    "title": "Připraveni začít něco úžasného?",
+    "description": "Pojďme vytvořit digitální zážitky, které přinášejí skutečné výsledky. Přijímám omezený počet projektů do roku 2026.",
+    "primaryButton": "Pojďme si promluvit",
+    "secondaryButton": "Zobrazit práce"
+  },
+  "projects": {
+    "badge": "© Vybraná práce",
+    "title": "Vybrané projekty",
+    "description": "Reálné projekty, které ukazují můj přístup k řešení složitých výzev.",
+    "viewAll": "Zobrazit všechny projekty",
+    "filters": {
+      "all": "Vše",
+      "web": "Web",
+      "saas": "SaaS",
+      "app": "Aplikace"
+    }
+  },
+  "contact": {
+    "badge": "© Spojme se",
+    "title": "Pojďme vytvořit něco skvělého",
+    "description": "Máte na mysli nějaký projekt? Proberme, jak můžeme spolupracovat.",
+    "form": {
+      "name": "Jméno",
+      "namePlaceholder": "Vaše jméno",
+      "email": "E-mail",
+      "emailPlaceholder": "vas@email.cz",
+      "message": "Zpráva",
+      "messagePlaceholder": "Povídejte mi o vašem projektu...",
+      "send": "Odeslat zprávu",
+      "sending": "Odesílám...",
+      "success": "Zpráva byla úspěšně odeslána!",
+      "error": "Odeslání zprávy se nezdařilo. Zkuste to prosím znovu."
+    }
+  },
+  "footer": {
+    "tagline": "Vytvářím digitální zážitky",
+    "quickLinks": "Rychlé odkazy",
+    "connect": "Spojte se",
+    "rights": "Všechna práva vyhrazena."
+  }
+}
