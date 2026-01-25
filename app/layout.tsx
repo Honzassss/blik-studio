@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Domine } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import { I18nProvider } from '@/lib/i18n'
@@ -84,6 +85,7 @@ export default function RootLayout({
             </div>
           </ThemeProvider>
         </I18nProvider>
+        <Analytics />
       </body>
     </html>
   )
