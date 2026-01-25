@@ -91,31 +91,33 @@
     }
   },
   "testimonials": {
-    "label": "Trusted by Leaders",
-    "title": "What brands say about our work",
-    "description": "Real feedback from brands we've partnered with. From day one through project completion, collaboration drives our success.",
-    "items": {
-      "sarah": {
-        "name": "Sarah Johnson",
-        "role": "CEO, Fashion Brand Co.",
-        "content": "Working with them was a game-changer for our business. Our new e-commerce platform increased sales by 156% in just three months."
-      },
-      "michael": {
-        "name": "Michael Chen",
-        "role": "CTO, DataMetrics Inc.",
-        "content": "Exceptional technical skills and great communication. The dashboard they built became our product's core feature."
-      },
-      "emma": {
-        "name": "Emma Rodriguez",
-        "role": "Founder, FitLife",
-        "content": "Not only did they deliver a beautiful app, but they also provided valuable insights on UX that improved our retention by 40%."
-      },
-      "david": {
-        "name": "David Park",
-        "role": "Marketing Director, Creative Co.",
-        "content": "Our new portfolio site won awards and tripled our inbound leads. The attention to detail and performance is outstanding."
-      }
+  "label": "Trusted by Industry Leaders",
+  "title": "What Our Clients Say About Our Work",
+  "description": "Real feedback from brands we’ve worked with. From day one to final delivery, collaboration is at the core of everything we do.",
+  "items": {
+    "herget": {
+      "name": "Jan Herget",
+      "role": "Co-owner, BKS Hotels",
+      "content": "It’s impressive how quickly and professionally the final product was delivered. Our new website resulted in a 30% increase in bookings within the first two months."
+    },
+    "stok": {
+      "name": "Jan Stok",
+      "role": "Owner, Hotel Stubnerhof",
+      "content": "Outstanding technical skills combined with excellent communication. Our new booking platform simplified the customer journey and increased conversions by 25%."
+    },
+    "matoulek": {
+      "name": "Martin Matoulek",
+      "role": "MD, Čas pro zdraví",
+      "content": "It’s remarkable what our students are able to build. The development speed and code quality are truly at a top-tier professional level."
+    },
+    "anonym": {
+      "name": "Anonymous Client",
+      "role": "CEO",
+      "content": "I’m extremely satisfied with the results of our collaboration. A professional approach and a deep understanding of our needs led to a successful project delivery."
     }
+  }
+
+
   },
   "cta": {
     "title": "Ready to start something amazing?",

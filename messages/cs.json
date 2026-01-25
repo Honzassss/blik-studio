@@ -91,31 +91,33 @@
     }
   },
   "testimonials": {
-    "label": "Důvěřují nám vedoucí",
-    "title": "Co říkají značky o naší práci",
-    "description": "Skutečná zpětná vazba od značek, se kterými jsme spolupracovali. Od prvního dne až do dokončení projektu nás řídí spolupráce.",
-    "items": {
-      "sarah": {
-        "name": "Sarah Johnson",
-        "role": "CEO, Fashion Brand Co.",
-        "content": "Spolupráce s nimi byla přelomová pro náš byznys. Naše nová platforma elektronického obchodu zvýšila tržby o 156% za pouhé tři měsíce."
-      },
-      "michael": {
-        "name": "Michael Chen",
-        "role": "CTO, DataMetrics Inc.",
-        "content": "Výjimečné technické dovednosti a skvělá komunikace. Dashboard, který vytvořili, se stal klíčovou funkcí našeho produktu."
-      },
-      "emma": {
-        "name": "Emma Rodriguez",
-        "role": "Founder, FitLife",
-        "content": "Nejen že dodali krásnou aplikaci, ale také poskytli cenné poznatky o UX, které zvýšily naši retenci o 40%."
-      },
-      "david": {
-        "name": "David Park",
-        "role": "Marketing Director, Creative Co.",
-        "content": "Naše nová portfolio stránka vítězila v soutěžích a ztrojnásobila počet příchozích potenciálních klientů. Péče o detaily a výkon je výjimečná."
-      }
+  "label": "Důvěřují nám lídři v oboru",
+  "title": "Co o naší práci říkají klienti",
+  "description": "Skutečná zpětná vazba od značek, se kterými jsme spolupracovali. Od prvního dne až po finální předání projektu je pro nás klíčová úzká spolupráce.",
+  "items": {
+    "herget": {
+      "name": "Jan Herget",
+      "role": "Spolumajitel, BKS Hotels",
+      "content": "Je až neuvěřitelné, jak rychle a kvalitně byl výsledný produkt dodán. Nová webová stránka nám během prvních dvou měsíců přinesla 30% nárůst rezervací."
+    },
+    "stok": {
+      "name": "Jan Stok",
+      "role": "Majitel, Hotel Stubnerhof",
+      "content": "Výjimečné technické dovednosti v kombinaci se skvělou komunikací. Nová rezervační platforma výrazně zjednodušila proces pro zákazníky a zvýšila konverze o 25 %."
+    },
+    "matoulek": {
+      "name": "Martin Matoulek",
+      "role": "MUDr., Čas pro zdraví",
+      "content": "Je pozoruhodné, co jsou naši studenti schopni vytvořit. Rychlost vývoje i kvalita kódu dosahují špičkové profesionální úrovně."
+    },
+    "anonym": {
+      "name": "Anonymní klient",
+      "role": "CEO",
+      "content": "S výsledky naší spolupráce jsem velmi spokojen. Profesionální přístup a schopnost porozumět našim potřebám vedly k úspěšnému dokončení projektu."
     }
+  }
+
+
   },
   "cta": {
     "title": "Připraveni začít něco úžasného?",

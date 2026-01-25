@@ -7,7 +7,7 @@ import { useI18n } from '@/lib/i18n'
 
 export default function Testimonials() {
   const { t } = useI18n()
-  const testimonialKeys = ['sarah', 'michael', 'emma', 'david'] as const
+  const testimonialKeys = ['herget', 'stok', 'matoulek', 'david'] as const
   return (
     <section className="relative py-24 md:py-40 bg-gradient-to-b from-primary-50 to-white dark:from-[#221e1a] dark:to-[#1d1a17] overflow-hidden">
       {/* Section separator */}
@@ -35,8 +35,8 @@ export default function Testimonials() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => {
-            const itemKey = testimonialKeys[index]
-            const translatedTestimonial = t.testimonials.items?.[itemKey]
+            const itemKey = testimonialKeys[index] as keyof typeof t.testimonials.items
+            const translatedTestimonial = t.testimonials?.items?.[itemKey]
             return (
             <motion.div
               key={testimonial.name}

@@ -15,14 +15,14 @@ export default function KineticHeadline({ lines, className, as = 'h1' }: Props) 
   const Wrapper: any = as
 
   return (
-    <Wrapper className={className}>
+    <Wrapper className={`text-4xl md:text-5xl lg:text-6xl font-bold ${className || ''}`}>
       {lines.map((line, i) => (
         <motion.div
           key={i}
           initial={{ opacity: 0, y: 20, letterSpacing: '-0.01em' }}
           animate={{ opacity: 1, y: 0, letterSpacing: '0em' }}
           transition={{ duration: reduce ? 0.3 : 0.7, delay: reduce ? 0 : base * i, ease: 'easeOut' }}
-          className="leading-tight"
+          className="leading-tight break-words"
         >
           <span>{line}</span>
         </motion.div>
