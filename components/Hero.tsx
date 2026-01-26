@@ -96,8 +96,8 @@ export default function Hero() {
       </div>
       
       <div className="container-custom relative">
-        <div className="grid gap-12 lg:gap-16 lg:grid-cols-[1.05fr_0.95fr] items-center">
-          <div className="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-none overflow-hidden">
+        <div className="flex items-center">
+          <div className="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl overflow-hidden">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
