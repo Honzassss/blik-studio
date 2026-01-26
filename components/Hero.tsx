@@ -97,7 +97,7 @@ export default function Hero() {
       
       <div className="container-custom relative">
         <div className="grid gap-12 lg:gap-16 lg:grid-cols-[1.05fr_0.95fr] items-center">
-          <div className="max-w-lg md:max-w-2xl">
+          <div className="w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-none overflow-hidden">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -122,7 +122,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mb-10 text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-200 max-w-xl leading-relaxed"
+              className="mb-10 text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-200 max-w-xs sm:max-w-sm md:max-w-xl leading-relaxed"
             >
               {t.hero.description}
             </motion.p>
@@ -165,70 +165,6 @@ export default function Hero() {
               </div>
             </motion.div>
           </div>
-
-          {/* Right column interactive card */}
-          <motion.div
-            style={{ rotateX, rotateY }}
-            className="relative w-full hidden lg:block"
-          >
-            <motion.div
-              className="relative rounded-[28px] bg-white/85 dark:bg-[#1f1b18]/85 border border-primary-100 dark:border-[#2a2520] shadow-2xl backdrop-blur-xl overflow-hidden"
-              whileHover={{ scale: 1.01 }}
-              transition={{ type: 'spring', stiffness: 120, damping: 14 }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-100/70 via-transparent to-transparent dark:from-[#27221d]/60" />
-              <div className="p-8 md:p-10 space-y-6 relative z-10">
-                <div className="flex items-center gap-3">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary-600 text-white font-semibold shadow-md">QA</span>
-                  <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Selected Case Study</p>
-                    <p className="font-semibold text-lg">E-Commerce Redesign</p>
-                  </div>
-                </div>
-                <p className="text-gray-700 dark:text-gray-200 text-base leading-relaxed">
-                  Rebuilt a fashion storefront with conversion-focused UX, blazing performance, and a streamlined checkout.
-                </p>
-                <div className="grid grid-cols-3 gap-3">
-                  {featuredHighlights.map((item) => (
-                    <div key={item.label} className="p-3 rounded-xl bg-primary-50 dark:bg-[#27221d] border border-primary-100 dark:border-[#2a2520]">
-                      <p className="text-xs text-gray-500 dark:text-gray-400">{item.label}</p>
-                      <p className="text-sm font-semibold text-gray-900 dark:text-white">{item.value}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="flex items-center justify-between pt-2">
-                  <div className="flex -space-x-2">
-                    <span className="w-9 h-9 rounded-full bg-primary-200/90 dark:bg-[#27221d] border border-white/80 dark:border-[#1d1a17] text-xs flex items-center justify-center font-semibold text-gray-800 dark:text-white">UX</span>
-                    <span className="w-9 h-9 rounded-full bg-primary-200/60 dark:bg-[#1f1b18] border border-white/80 dark:border-[#1d1a17] text-xs flex items-center justify-center font-semibold text-gray-800 dark:text-white">FE</span>
-                    <span className="w-9 h-9 rounded-full bg-primary-100/70 dark:bg-[#2a2520] border border-white/80 dark:border-[#1d1a17] text-xs flex items-center justify-center font-semibold text-gray-800 dark:text-white">SEO</span>
-                  </div>
-                  <Link
-                    href="/projects/ecommerce-platform"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-primary-700 hover:text-primary-800"
-                  >
-                    View case study
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Floating chips */}
-            <motion.div
-              className="absolute -left-6 top-8 px-4 py-2 rounded-full bg-primary-700 text-white shadow-lg"
-              animate={{ y: [0, -6, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-            >
-              Next.js • TypeScript
-            </motion.div>
-            <motion.div
-              className="absolute -right-4 bottom-8 px-4 py-2 rounded-full bg-white dark:bg-[#1f1b18] border border-primary-100 dark:border-[#2a2520] text-sm font-semibold shadow-md"
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 0.6 }}
-            >
-              Performance • 95+
-            </motion.div>
-          </motion.div>
         </div>
       </div>
 
