@@ -8,6 +8,10 @@ import { useI18n } from '@/lib/i18n'
 export default function Services() {
   const { t } = useI18n()
   const serviceKeys = ['webDev', 'uxDesign', 'mobile', 'perf', 'seo', 'support'] as const
+  
+  // Duplicate services for infinite loop effect
+  const infiniteServices = [...services, ...services]
+  
   return (
     <section id="services" className="relative py-24 md:py-40 bg-white dark:bg-[#1d1a17] overflow-hidden">
       {/* Section separator */}
@@ -29,47 +33,57 @@ export default function Services() {
           </RevealText>
         </div>
 
-        {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 md:mb-24">
-          {services.map((service, index) => (
-            <motion.div
-              key={service.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group p-8 md:p-10 rounded-2xl bg-primary-50 dark:bg-[#221e1a] border border-primary-100 dark:border-[#2a2520] hover:border-primary-200 dark:hover:border-[#2a2520] transition-all hover:shadow-xl"
-            >
-              <div className="w-12 h-12 mb-6 rounded-xl bg-primary-600/10 dark:bg-primary-600/20 flex items-center justify-center group-hover:bg-primary-600/20 dark:group-hover:bg-primary-600/30 transition-colors">
-                <service.icon className="w-6 h-6 text-primary-600" />
-              </div>
+        {/* Infinite carousel */}
+        <div className="overflow-hidden">
+          <motion.div
+            className="flex gap-8 pb-8"
+            animate={{ x: [0, -1600] }}
+            transition={{
+              duration: 40,
+              repeat: Infinity,
+              ease: 'linear',
+              repeatType: 'loop',
+            }}
+          >
+            {infiniteServices.map((service, index) => {
+              const serviceIndex = index % services.length
+              const itemKey = serviceKeys[serviceIndex]
+              return (
+                <div
+                  key={`${index}`}
+                  className="group min-w-[350px] md:min-w-[400px] p-8 md:p-10 rounded-2xl bg-primary-50 dark:bg-[#221e1a] border border-primary-100 dark:border-[#2a2520] hover:border-primary-200 dark:hover:border-[#2a2520] transition-all hover:shadow-xl flex-shrink-0"
+                >
+                  <div className="w-12 h-12 mb-6 rounded-xl bg-primary-600/10 dark:bg-primary-600/20 flex items-center justify-center group-hover:bg-primary-600/20 dark:group-hover:bg-primary-600/30 transition-colors">
+                    <service.icon className="w-6 h-6 text-primary-600" />
+                  </div>
 
-              {(() => {
-                const itemKey = serviceKeys[index]
-                return (
-                  <>
-                    <h3 className="text-2xl font-bold mb-3">{t.services.items?.[itemKey]?.title || service.title}</h3>
-                    <p className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
-                      {t.services.items?.[itemKey]?.description || service.description}
-                    </p>
-                  </>
-                )
-              })()}
+                  {(() => {
+                    return (
+                      <>
+                        <h3 className="text-2xl font-bold mb-3">{t.services.items?.[itemKey]?.title || service.title}</h3>
+                        <p className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
+                          {t.services.items?.[itemKey]?.description || service.description}
+                        </p>
+                      </>
+                    )
+                  })()}
 
-              <ul className="space-y-3">
-                {service.outcomes.map((outcome) => (
-                  <li key={outcome} className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-300">
-                    <span className="text-primary-600 font-bold mt-0.5">→</span>
-                    <span>{outcome}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+                  <ul className="space-y-3">
+                    {service.outcomes.map((outcome) => (
+                      <li key={outcome} className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-300">
+                        <span className="text-primary-600 font-bold mt-0.5">→</span>
+                        <span>{outcome}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )
+            })}
+          </motion.div>
         </div>
 
         {/* Bottom divider */}
-        <div className="border-t border-primary-100 dark:border-[#2a2520]" />
+        <div className="border-t border-primary-100 dark:border-[#2a2520] mt-16 md:mt-24" />
       </div>
     </section>
   )

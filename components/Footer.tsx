@@ -1,13 +1,12 @@
 'use client'
 
 import Link from 'next/link'
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 import { useI18n } from '@/lib/i18n'
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com/blikstudio', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com/company/blik-studio', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com/blikstudio', label: 'Twitter' },
+  { icon: Github, href: 'https://github.com/Honzassss', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/jan-štok-587a88305/', label: 'LinkedIn' },
   { icon: Mail, href: 'mailto:stok@blik-studio.cz', label: 'Email' },
 ]
 

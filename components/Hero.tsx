@@ -97,7 +97,7 @@ export default function Hero() {
       
       <div className="container-custom relative">
         <div className="grid gap-12 lg:gap-16 lg:grid-cols-[1.05fr_0.95fr] items-center">
-          <div>
+          <div className="max-w-lg md:max-w-2xl">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ export default function Hero() {
 
             {/* Headline */}
             <KineticHeadline
-              className="mb-6"
+              className="mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
               lines={[
                 t.hero.title,
               ]}
@@ -122,7 +122,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mb-10 text-lg md:text-xl text-gray-700 dark:text-gray-200 max-w-2xl"
+              className="mb-10 text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-200 max-w-xl leading-relaxed"
             >
               {t.hero.description}
             </motion.p>

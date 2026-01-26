@@ -15,7 +15,7 @@ export default function KineticHeadline({ lines, className, as = 'h1' }: Props) 
   const Wrapper: any = as
 
   return (
-    <Wrapper className={`text-4xl md:text-5xl lg:text-6xl font-bold ${className || ''}`}>
+    <Wrapper className={`font-bold ${className || 'text-4xl md:text-5xl lg:text-6xl'}`}>
       {lines.map((line, i) => (
         <motion.div
           key={i}
