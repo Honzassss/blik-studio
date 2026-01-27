@@ -169,29 +169,57 @@
     "items": {
       "stubnerhof-website": {
         "title": "Hotel Stubnerhof Website",
-        "description": "WordPress + Elementor site built for easy editing by the owner, with SEO and multilingual support."
+        "description": "WordPress + Elementor site built for easy editing by the owner, with SEO and multilingual support.",
+        "problem": "The website needed a modern design, better discoverability, and an editing workflow the owner could manage without developers.",
+        "solution": "Designed and built a WordPress + Elementor site with improved structure, multilingual setup, and SEO-focused pages.",
+        "results": ["SEO score improved (Lighthouse/SEO target: 100)", "Stronger online presence", "Increase in online reservations"]
       },
       "bks-hotel-digitization": {
         "title": "Hotel Digitization & Reservation System",
-        "description": "Digitization project for a hotel group including online booking, online check-in, smart locks, and on-site network improvements."
+        "description": "Digitization project for a hotel group including online booking, online check-in, smart locks, and on-site network improvements.",
+        "problem": "High operational load and booking mistakes created unnecessary calls, manual work, and staffing pressure at reception.",
+        "solution": "Implemented a digital guest flow (online booking + online check-in), improved infrastructure, and integrated smart access to reduce manual processes.",
+        "results": ["~50% fewer booking errors", "~70% fewer calls", "Reduced need for a full-time reception role"]
       },
       "fitconnect-ios": {
         "title": "FitConnect (iOS)",
-        "description": "iOS app that connects fitness smart devices into one place to help users track progress and support weight loss goals."
+        "description": "iOS app that connects fitness smart devices into one place to help users track progress and support weight loss goals.",
+        "problem": "Fitness data is split across multiple devices and platforms, making it hard for users to track progress and stay consistent.",
+        "solution": "Built an iOS app that aggregates device data through APIs and stores it in a structured backend for easy progress monitoring.",
+        "results": ["Device data centralized into one dashboard", "API + database integration for consistent tracking", "Designed for future public release"]
       },
       "torvik-lights-website-admin": {
         "title": "Törvik-Lights Website + News Admin",
-        "description": "Laravel + MySQL website with an admin/news panel so the owner can publish updates without coding."
+        "description": "Laravel + MySQL website with an admin/news panel so the owner can publish updates without coding.",
+        "problem": "Client needed a simple way to publish news and updates without editing code, plus smoother hosting/admin workflow.",
+        "solution": "Implemented a secure admin panel for creating and publishing news posts and integrated it into the live site.",
+        "results": ["News publishing without developer involvement", "Cleaner content workflow for updates", "Integrated with existing hosting setup"]
       },
       "haslinger-website": {
         "title": "Alpenpension Haslinger Website",
-        "description": "WordPress + Elementor site built for owner-managed edits, SEO, and multilingual content."
+        "description": "WordPress + Elementor site built for owner-managed edits, SEO, and multilingual content.",
+        "problem": "The property needed a modern web presence that converts visitors into reservations and is easy to update.",
+        "solution": "Designed and built a multilingual WordPress site with improved structure, SEO, and owner-friendly editing.",
+        "results": ["More online visibility", "Increase in reservations (reported ~30%)", "Higher share of bookings coming through online channels"]
       },
       "kidscalling-ios": {
         "title": "KidsCalling (iOS)",
-        "description": "iOS app for kids who love calling — with prerecorded voices so they can have fun without disturbing real people."
+        "description": "iOS app for kids who love calling — with prerecorded voices so they can have fun without disturbing real people.",
+        "problem": "Kids often want to call repeatedly, which can disturb family members or lead to calling real people unintentionally.",
+        "solution": "Built a kid-friendly calling experience using prerecorded voice responses to simulate conversations safely.",
+        "results": ["No calls to real people", "Fun, repeatable 'calling' experience for kids", "Built for simple, safe usage"]
       }
     }
+  },
+  "projectDetail": {
+    "backToProjects": "Back to Projects",
+    "viewLiveSite": "View Live Site",
+    "viewOnGithub": "View on GitHub",
+    "nextProject": "Next Project",
+    "challenge": "The Challenge",
+    "solution": "The Solution",
+    "results": "The Results",
+    "tech": "Tech Stack"
   },
   "footer": {
     "tagline": "Crafting digital experiences",

@@ -169,29 +169,57 @@
     "items": {
       "stubnerhof-website": {
         "title": "Hotel Stubnerhof - Web",
-        "description": "Web s WordPress + Elementor vytvořený pro snadnou úpravu majitelem, s SEO a vícejazyčnou podporou."
+        "description": "Web s WordPress + Elementor vytvořený pro snadnou úpravu majitelem, s SEO a vícejazyčnou podporou.",
+        "problem": "Web potřeboval moderní návrh, lepší objevitelnost a workflow pro úpravy, který by mohl majitel spravovat bez vývojářů.",
+        "solution": "Navrhl jsem a postavil web s WordPress + Elementor s zlepšenou strukturou, vícejazyčnou podporou a SEO optimalizovanými stránkami.",
+        "results": ["Zlepšená SEO skóre (Lighthouse/SEO cíl: 100)", "Silnější online přítomnost", "Nárůst online rezervací"]
       },
       "bks-hotel-digitization": {
         "title": "Digitalizace hotelového řetězce a systém rezervací",
-        "description": "Projekt digitalizace pro hotel group zahrnující online rezervace, online check-in, chytrá zámky a vylepšení sítě."
+        "description": "Projekt digitalizace pro hotel group zahrnující online rezervace, online check-in, chytrá zámky a vylepšení sítě.",
+        "problem": "Vysoká provozní zátěž a chyby v rezervacích vytvářely zbytečné hovory, manuální práci a tlak na recepci.",
+        "solution": "Implementoval jsem digitální tok hostů (online rezervace + online check-in), vylepšenou infrastrukturu a integrované chytré zámky.",
+        "results": ["~50% méně chyb v rezervacích", "~70% méně telefonních hovorů", "Snížená potřeba plnočasového recepčního"]
       },
       "fitconnect-ios": {
         "title": "FitConnect (iOS)",
-        "description": "iOS aplikace, která propojuje fitness chytré zařízení na jednom místě, aby uživatelé mohli sledovat pokrok a dosáhovat svých cílů."
+        "description": "iOS aplikace, která propojuje fitness chytré zařízení na jednom místě, aby uživatelé mohli sledovat pokrok a dosáhovat svých cílů.",
+        "problem": "Fitness data jsou rozptýlená across více zařízení a platforem, což ztěžuje uživatelům sledování pokroku a konzistenci.",
+        "solution": "Postavil jsem iOS aplikaci, která agreguje data zařízení přes API a ukládá je v strukturovaném backendu pro snadné sledování.",
+        "results": ["Data zařízení centralizovaná do jednoho dashboardu", "API + databázová integrace pro konzistentní sledování", "Navrženo pro budoucí veřejné vydání"]
       },
       "torvik-lights-website-admin": {
         "title": "Törvik-Lights Web + Správa novinek",
-        "description": "Laravel + MySQL web s administrační součástí pro publikování novinek bez psaní kódu."
+        "description": "Laravel + MySQL web s administrační součástí pro publikování novinek bez psaní kódu.",
+        "problem": "Klient potřeboval jednoduchý způsob, jak publikovat novinky a aktualizace bez editace kódu a s lepším hostingem.",
+        "solution": "Implementoval jsem bezpečný administrační panel pro vytváření a publikování příspěvků a integroval jsem jej do živého webu.",
+        "results": ["Publikování novinek bez zásahu vývojáře", "Čistší workflow pro aktualizace obsahu", "Integrováno se stávajícím hostingem"]
       },
       "haslinger-website": {
         "title": "Alpenpension Haslinger Web",
-        "description": "Web s WordPress + Elementor vytvořený pro vlastníka, s SEO a vícejazyčným obsahem."
+        "description": "Web s WordPress + Elementor vytvořený pro vlastníka, s SEO a vícejazyčným obsahem.",
+        "problem": "Nemovitost potřebovala moderní webovou přítomnost, která konvertuje návštěvníky na rezervace a je snadná k aktualizaci.",
+        "solution": "Navrhl jsem a postavil vícejazyčný web s WordPress s vylepšenou strukturou, SEO a uživatelsky přívětivou editací.",
+        "results": ["Větší online viditelnost", "Nárůst rezervací (hlášeno ~30%)", "Vyšší podíl rezervací přicházejících online"]
       },
       "kidscalling-ios": {
         "title": "KidsCalling (iOS)",
-        "description": "iOS aplikace pro děti, které rády telefonují — s nahranými hlasy, aby si mohly hrát bez obtěžování ostatních lidí."
+        "description": "iOS aplikace pro děti, které rády telefonují — s nahranými hlasy, aby si mohly hrát bez obtěžování ostatních lidí.",
+        "problem": "Děti si často chtějí volat opakovaně, což může obtěžovat členy rodiny nebo vést k neúmyslným voláním skutečným lidem.",
+        "solution": "Postavil jsem uživatelsky přívětivou volací zkušenost s přednahranými hlasovými odpověďmi, které bezpečně simulují rozhovory.",
+        "results": ["Žádné volání skutečným lidem", "Zábavný, opakovatelný 'volací' zážitek pro děti", "Postaveno na jednoduchost a bezpečnost"]
       }
     }
+  },
+  "projectDetail": {
+    "backToProjects": "Zpět na projekty",
+    "viewLiveSite": "Zobrazit live web",
+    "viewOnGithub": "Zobrazit na GitHubu",
+    "nextProject": "Další projekt",
+    "challenge": "Výzva",
+    "solution": "Řešení",
+    "results": "Výsledky",
+    "tech": "Technologický stack"
   },
   "footer": {
     "tagline": "Vytvářím digitální zážitky",
