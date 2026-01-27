@@ -22,7 +22,7 @@ export default function FeaturedProjects() {
         <div className="max-w-3xl mb-16 md:mb-24">
           <RevealText as="div" className="space-y-4">
             <p className="text-sm md:text-base font-semibold text-primary-600 uppercase tracking-wider">
-              {t.projects.badge}
+              {t.projects.label}
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               {t.projects.title}
@@ -43,7 +43,7 @@ export default function FeaturedProjects() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-center mt-16 md:mt-24 pt-16 md:pt-24 border-t border-primary-100 dark:border-[#2a2520]"
         >
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-6 uppercase tracking-wider">More work available</p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mb-6 uppercase tracking-wider">{t.projects.moreWork}</p>
           <Link
             href="/projects"
             className="inline-flex items-center gap-2 px-9 py-3.5 bg-primary-700 text-white rounded-xl hover:bg-primary-800 transition-all hover:shadow-lg hover:-translate-y-0.5 font-semibold"

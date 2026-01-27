@@ -154,6 +154,45 @@
       "error": "Failed to send message. Please try again."
     }
   },
+  "projects": {
+    "label": "Featured Work",
+    "title": "Projects that Drive Results",
+    "description": "A selection of impactful work across web development, design, and digital strategy. Each project reflects my commitment to quality and measurable outcomes.",
+    "viewAll": "View All Projects",
+    "moreWork": "More work available",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "saas": "SaaS",
+      "app": "App"
+    },
+    "items": {
+      "stubnerhof-website": {
+        "title": "Hotel Stubnerhof Website",
+        "description": "WordPress + Elementor site built for easy editing by the owner, with SEO and multilingual support."
+      },
+      "bks-hotel-digitization": {
+        "title": "Hotel Digitization & Reservation System",
+        "description": "Digitization project for a hotel group including online booking, online check-in, smart locks, and on-site network improvements."
+      },
+      "fitconnect-ios": {
+        "title": "FitConnect (iOS)",
+        "description": "iOS app that connects fitness smart devices into one place to help users track progress and support weight loss goals."
+      },
+      "torvik-lights-website-admin": {
+        "title": "Törvik-Lights Website + News Admin",
+        "description": "Laravel + MySQL website with an admin/news panel so the owner can publish updates without coding."
+      },
+      "haslinger-website": {
+        "title": "Alpenpension Haslinger Website",
+        "description": "WordPress + Elementor site built for owner-managed edits, SEO, and multilingual content."
+      },
+      "kidscalling-ios": {
+        "title": "KidsCalling (iOS)",
+        "description": "iOS app for kids who love calling — with prerecorded voices so they can have fun without disturbing real people."
+      }
+    }
+  },
   "footer": {
     "tagline": "Crafting digital experiences",
     "quickLinks": "Quick Links",

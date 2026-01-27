@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   keywords: ['web developer', 'web design', 'Next.js', 'React', 'TypeScript', 'portfolio', 'freelance'],
     authors: [{ name: 'blik-studio' }],
     creator: 'blik-studio',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'cs_CZ',
@@ -69,7 +73,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="cs" suppressHydrationWarning>
       <body className={domine.variable}>
         <I18nProvider>
           <ThemeProvider>

@@ -154,6 +154,45 @@
       "error": "Odeslání zprávy se nezdařilo. Zkuste to prosím znovu."
     }
   },
+  "projects": {
+    "label": "Vybrané práce",
+    "title": "Projekty, které přinášejí výsledky",
+    "description": "Výběr některých z mých nejdůležitějších projektů v oblasti vývoje webu, designu a digitální strategie. Každý projekt odráží můj závazek ke kvalitě a měřitelným výsledkům.",
+    "viewAll": "Zobrazit všechny projekty",
+    "moreWork": "Další práce dostupná",
+    "filters": {
+      "all": "Vše",
+      "web": "Web",
+      "saas": "SaaS",
+      "app": "Aplikace"
+    },
+    "items": {
+      "stubnerhof-website": {
+        "title": "Hotel Stubnerhof - Web",
+        "description": "Web s WordPress + Elementor vytvořený pro snadnou úpravu majitelem, s SEO a vícejazyčnou podporou."
+      },
+      "bks-hotel-digitization": {
+        "title": "Digitalizace hotelového řetězce a systém rezervací",
+        "description": "Projekt digitalizace pro hotel group zahrnující online rezervace, online check-in, chytrá zámky a vylepšení sítě."
+      },
+      "fitconnect-ios": {
+        "title": "FitConnect (iOS)",
+        "description": "iOS aplikace, která propojuje fitness chytré zařízení na jednom místě, aby uživatelé mohli sledovat pokrok a dosáhovat svých cílů."
+      },
+      "torvik-lights-website-admin": {
+        "title": "Törvik-Lights Web + Správa novinek",
+        "description": "Laravel + MySQL web s administrační součástí pro publikování novinek bez psaní kódu."
+      },
+      "haslinger-website": {
+        "title": "Alpenpension Haslinger Web",
+        "description": "Web s WordPress + Elementor vytvořený pro vlastníka, s SEO a vícejazyčným obsahem."
+      },
+      "kidscalling-ios": {
+        "title": "KidsCalling (iOS)",
+        "description": "iOS aplikace pro děti, které rády telefonují — s nahranými hlasy, aby si mohly hrát bez obtěžování ostatních lidí."
+      }
+    }
+  },
   "footer": {
     "tagline": "Vytvářím digitální zážitky",
     "quickLinks": "Rychlé odkazy",
