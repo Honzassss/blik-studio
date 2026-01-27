@@ -77,10 +77,10 @@ export default function ProjectGallery({ projects }: Props) {
               >
                 <div className="flex-1">
                   <h3 className="text-2xl md:text-3xl font-bold group-hover:translate-x-2 transition-transform">
-                    {project.title}
+                    {t.projects?.items?.[project.slug as keyof typeof t.projects.items]?.title || project.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mt-2">
-                    {project.description}
+                    {t.projects?.items?.[project.slug as keyof typeof t.projects.items]?.description || project.description}
                   </p>
                 </div>
                 <div className="flex items-center gap-6 ml-8">
@@ -125,7 +125,7 @@ export default function ProjectGallery({ projects }: Props) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-white text-sm font-semibold">{hoveredProject.title}</p>
+                <p className="text-white text-sm font-semibold">{t.projects?.items?.[hoveredProject.slug as keyof typeof t.projects.items]?.title || hoveredProject.title}</p>
                 <p className="text-white/80 text-xs mt-1">{hoveredProject.outcome}</p>
               </div>
             </motion.div>
@@ -158,9 +158,9 @@ export default function ProjectGallery({ projects }: Props) {
                   </span>
                   <ArrowUpRight className="w-5 h-5 text-primary-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <h3 className="text-xl font-bold mb-2">{t.projects?.items?.[project.slug as keyof typeof t.projects.items]?.title || project.title}</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
-                  {project.description}
+                  {t.projects?.items?.[project.slug as keyof typeof t.projects.items]?.description || project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.slice(0, 3).map((tag) => (

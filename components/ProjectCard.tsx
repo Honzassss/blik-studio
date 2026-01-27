@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ExternalLink, Github } from 'lucide-react'
 import { Project } from '@/lib/projects'
+import { useI18n } from '@/lib/i18n'
 
 interface ProjectCardProps {
   project: Project
@@ -12,6 +13,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+  const { t } = useI18n()
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -64,7 +66,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         <div>
           <div className="flex items-start justify-between mb-2">
             <h3 className="text-xl font-semibold group-hover:text-primary-600 transition-colors">
-              {project.title}
+              {t.projects?.items?.[project.slug as keyof typeof t.projects.items]?.title || project.title}
             </h3>
             <span className="text-sm text-gray-500 dark:text-gray-300">
               {project.year}
@@ -72,7 +74,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           </div>
           
           <p className="text-gray-700 dark:text-gray-200 mb-3">
-            {project.description}
+            {t.projects?.items?.[project.slug as keyof typeof t.projects.items]?.description || project.description}
           </p>
           
           <div className="flex items-center gap-2 mb-4">
