@@ -4,8 +4,8 @@ import ProjectGrid from '@/components/ProjectGrid'
 import { projects } from '@/lib/projects'
 
 export const metadata: Metadata = {
-  title: 'Projects',
-  description: 'Browse my portfolio of web development projects, from e-commerce platforms to SaaS applications.',
+  title: 'Projekty',
+  description: 'Podívejte se na můj portfolio projektů webového vývoje, od e-commerce platforem až po SaaS aplikace.',
 }
 
 export default function ProjectsPage() {

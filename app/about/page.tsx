@@ -7,8 +7,8 @@ import SectionHeading from '@/components/SectionHeading'
 import { skills } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'Learn more about my background, skills, and approach to web development.',
+  title: 'O mně',
+  description: 'Zjistěte více o mém vzdělání, dovednostech a přístupu k webovému vývoji.',
 }
 
 export default function AboutPage() {

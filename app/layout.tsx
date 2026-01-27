@@ -20,19 +20,19 @@ const domine = Domine({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://blik-studio.cz'),
   title: {
-      default: 'blik-studio — Digital Experiences',
+      default: 'blik-studio — Digitální Řešení',
       template: '%s | blik-studio',
   },
-    description: 'Full-stack studio crafting digital experiences that blend design and engineering.',
+    description: 'Kompletní studio vytvářející digitální řešení, která propojují design a technologii.',
   keywords: ['web developer', 'web design', 'Next.js', 'React', 'TypeScript', 'portfolio', 'freelance'],
     authors: [{ name: 'blik-studio' }],
     creator: 'blik-studio',
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'cs_CZ',
       url: 'https://your-domain.com',
-      title: 'blik-studio — Digital Experiences',
-    description: 'Full-stack studio crafting digital experiences that blend design and engineering.',
+      title: 'blik-studio — Digitální Řešení',
+    description: 'Kompletní studio vytvářející digitální řešení, která propojují design a technologii.',
       siteName: 'blik-studio Portfolio',
     images: [
       {
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'blik-studio — Digital Experiences',
-    description: 'Full-stack studio crafting digital experiences that blend design and engineering.',
+    title: 'blik-studio — Digitální Řešení',
+    description: 'Kompletní studio vytvářející digitální řešení, která propojují design a technologii.',
     images: ['/og-image.jpg'],
     creator: '@blikstudio',
   },
