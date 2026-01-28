@@ -221,6 +221,10 @@
     "results": "Výsledky",
     "tech": "Technologický stack"
   },
+  "allProjectsPage": {
+    "title": "Všechny projekty",
+    "subtitle": "Sbírka projektů, na kterých jsem pracoval, od konceptu až po spuštění."
+  },
   "footer": {
     "tagline": "Vytvářím digitální zážitky",
     "quickLinks": "Rychlé odkazy",

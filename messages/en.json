@@ -221,6 +221,10 @@
     "results": "The Results",
     "tech": "Tech Stack"
   },
+  "allProjectsPage": {
+    "title": "All Projects",
+    "subtitle": "A collection of projects I've worked on, from concept to launch."
+  },
   "footer": {
     "tagline": "Crafting digital experiences",
     "quickLinks": "Quick Links",
